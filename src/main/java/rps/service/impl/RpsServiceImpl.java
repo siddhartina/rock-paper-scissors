@@ -1,5 +1,6 @@
 package rps.service.impl;
 
+import org.slf4j.LoggerFactory;
 import rps.dto.RpsDto;
 import rps.service.RpsService;
 
@@ -8,14 +9,11 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-/**
- * Created by ashish on 13/5/17.
- */
 @Service
 public class RpsServiceImpl implements RpsService {
 	@Override
-	public void handShown(RpsDto rpsDto) {
-
+	public void handShown(String choice) {
+		LoggerFactory.getLogger(RpsServiceImpl.class).info("Entered handShown(" + choice + ")");
 	}
 
 	@Override

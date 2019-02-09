@@ -8,13 +8,11 @@
 <hr/>
 <div class="container" ng-controller="RpsController">
     <div class="row">
-        <label>User</label> <input type="text" ng-model="rpsDto.userName" class="input-sm spacing"/>
-        <button ng-click="handShown()" class="btn btn-sm btn-info">Save User</button>
+        <button ng-click="handShown('ROCK')" class="btn btn-sm btn-info">Rock</button>
+        <button ng-click="handShown('PAPER')" class="btn btn-sm btn-info">Paper</button>
+        <button ng-click="handShown('SCISSORS')" class="btn btn-sm btn-info">Scissors</button>
     </div>
     <hr/>
-    <div class="row">
-        <p>{{allUsers | json}}</p>
-    </div>
     <hr/>
     <div class="row" ng-repeat="user in allUsers">
         <div class="">

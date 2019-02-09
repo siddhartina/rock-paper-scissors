@@ -9,9 +9,9 @@ module.controller("RpsController", [ "$scope", "RpsService",
 				userName : null,
 			};
 
-			$scope.handShown = function() {
-				RpsService.handShown($scope.rpsDto).then(function() {
-					console.log("entered rpcService.handShown()");
+			$scope.handShown = function(choice) {
+				RpsService.handShown(choice).then(function() {
+					console.log("entered rpcService.handShown("+choice+")");
 					RpsService.getAllUsers().then(function(value) {
 						$scope.allUsers= value.data;
 					}, function(reason) {
