@@ -1,12 +1,17 @@
-body{
-    background-color: #efefef;
+body { background-color: #efefef; }
+span.spacing{ margin-right: 10px; }
+input.custom-width{ width: 200px; }
+input.spacing{ margin-right: 5px; }
+
+#btn-rock-human,
+#btn-paper-human,
+#btn-scissors-human
+ {
+    float: left;
+    width: 146px;
+    height: 146px;
 }
-span.spacing{
-    margin-right: 10px;
-}
-input.custom-width{
-    width: 200px;
-}
-input.spacing{
-    margin-right: 5px;
-}
+
+#btn-rock-human {background: url(../../icons/rock-human.png) no-repeat;}
+#btn-paper-human {background: url(../../icons/paper-human.png) no-repeat;}
+#btn-scissors-human {background: url(../../icons/scissors-human.png) no-repeat;}
