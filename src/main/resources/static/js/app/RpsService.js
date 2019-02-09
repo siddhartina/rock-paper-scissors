@@ -7,7 +7,7 @@ angular.module('demo.services', []).factory('RpsService',
 				return $http.get(CONSTANTS.getAllUsers);
 			}
 			service.handShown = function(choice) {
-				return $http.post(CONSTANTS.handShown, choice);
+				return $http.post(CONSTANTS.handShown + choice);
 			}
 			return service;
 		} ]);

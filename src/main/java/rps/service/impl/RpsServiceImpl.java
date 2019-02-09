@@ -1,6 +1,7 @@
 package rps.service.impl;
 
 import org.slf4j.LoggerFactory;
+import rps.dto.Choice;
 import rps.dto.RpsDto;
 import rps.service.RpsService;
 
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class RpsServiceImpl implements RpsService {
 	@Override
-	public void handShown(String choice) {
+	public void handShown(Choice choice) {
 		LoggerFactory.getLogger(RpsServiceImpl.class).info("Entered handShown(" + choice + ")");
 	}
 

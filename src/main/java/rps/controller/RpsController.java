@@ -3,11 +3,9 @@ package rps.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import rps.dto.Choice;
 import rps.dto.RpsDto;
 import rps.service.RpsService;
 import rps.utils.Constants;
@@ -27,7 +25,7 @@ public class RpsController {
 	}
 	
 	@RequestMapping(value= Constants.SAVE_USER, method= RequestMethod.POST)
-	public void handShown(@RequestBody String choice) {
+	public void handShown(@RequestParam(name="choice") Choice choice) {
 		rpsService.handShown(choice);
 	}
 }
