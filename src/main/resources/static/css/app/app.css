@@ -3,15 +3,22 @@ span.spacing{ margin-right: 10px; }
 input.custom-width{ width: 200px; }
 input.spacing{ margin-right: 5px; }
 
-#btn-rock-human,
-#btn-paper-human,
-#btn-scissors-human
- {
+hand,
+span.rock-human,
+span.paper-human,
+span.scissors-human,
+span.rock-computer,
+span.paper-computer,
+span.scissors-computer
+{
     float: left;
     width: 146px;
     height: 146px;
 }
 
-#btn-rock-human {background: url(../../icons/rock-human.png) no-repeat;}
-#btn-paper-human {background: url(../../icons/paper-human.png) no-repeat;}
-#btn-scissors-human {background: url(../../icons/scissors-human.png) no-repeat;}
+span.rock-human {background: url(../../icons/rock-human.png) no-repeat;}
+span.paper-human {background: url(../../icons/paper-human.png) no-repeat;}
+span.scissors-human {background: url(../../icons/scissors-human.png) no-repeat;}
+span.rock-computer {background: url(../../icons/rock-computer.png) no-repeat;}
+span.paper-computer {background: url(../../icons/paper-computer.png) no-repeat;}
+span.scissors-computer {background: url(../../icons/scissors-computer.png) no-repeat;}

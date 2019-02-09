@@ -11,7 +11,7 @@ public class ComputersChoiceDto {
         return choice;
     }
 
-    public void setChoice(Choice choice) {
-        this.choice = choice;
+    public String getClassNameServer() {
+        return this.choice.name().toLowerCase() + "-computer";
     }
 }
