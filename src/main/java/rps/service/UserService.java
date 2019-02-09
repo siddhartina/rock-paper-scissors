@@ -1,8 +1,8 @@
-package com.example.demo.service;
+package rps.service;
 
 import java.util.List;
 
-import com.example.demo.dto.UserDto;
+import rps.dto.UserDto;
 
 /**
  * Created by ashish on 13/5/17.

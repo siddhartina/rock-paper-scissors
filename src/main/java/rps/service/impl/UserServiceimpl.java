@@ -1,7 +1,7 @@
-package com.example.demo.service.impl;
+package rps.service.impl;
 
-import com.example.demo.dto.UserDto;
-import com.example.demo.service.UserService;
+import rps.dto.UserDto;
+import rps.service.UserService;
 
 import java.util.Collections;
 import java.util.List;

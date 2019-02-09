@@ -1,4 +1,4 @@
-package com.example.demo;
+package rps;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
