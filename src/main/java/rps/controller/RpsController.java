@@ -6,13 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import rps.dto.Choice;
+import rps.dto.ComputersChoiceDto;
 import rps.dto.RpsDto;
 import rps.service.RpsService;
 import rps.utils.Constants;
 
-/**
- * Created by ashish on 13/5/17.
- */
 @RequestMapping("/user")
 @RestController
 public class RpsController {
@@ -25,7 +23,7 @@ public class RpsController {
 	}
 	
 	@RequestMapping(value= Constants.SAVE_USER, method= RequestMethod.POST)
-	public void handShown(@RequestParam(name="choice") Choice choice) {
-		rpsService.handShown(choice);
+	public ComputersChoiceDto handShown(@RequestParam(name="choice") Choice choice) {
+		return rpsService.handShown(choice);
 	}
 }

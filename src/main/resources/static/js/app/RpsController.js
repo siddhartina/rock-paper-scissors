@@ -10,8 +10,9 @@ module.controller("RpsController", [ "$scope", "RpsService",
 			};
 
 			$scope.handShown = function(choice) {
-				RpsService.handShown(choice).then(function() {
-					console.log("entered rpcService.handShown("+choice+")");
+				RpsService.handShown(choice).then(function(response) {
+					console.log("Entered rpcService.handShown("+choice+") -> " + response.data.choice);
+					$scope.computersChoice=response.data;
 					RpsService.getAllUsers().then(function(value) {
 						$scope.allUsers= value.data;
 					}, function(reason) {
