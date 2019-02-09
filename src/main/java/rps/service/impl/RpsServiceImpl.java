@@ -20,6 +20,6 @@ public class RpsServiceImpl implements RpsService {
 
 	@Override
 	public List<RpsDto> getAllUsers() {
-		return Collections.emptyList();
+		return Collections.singletonList(new RpsDto(5, "Tom"));
 	}
 }

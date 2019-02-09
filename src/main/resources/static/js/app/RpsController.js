@@ -7,14 +7,9 @@ module.controller("RpsController", [ "$scope", "RpsService",
 			$scope.rpsDto = {
 				userId : null,
 				userName : null,
-				skillDtos : []
 			};
-			$scope.skills = [];
-			
+
 			$scope.handShown = function() {
-				$scope.rpsDto.skillDtos = $scope.skills.map(skill => {
-					return {skillId: null, skillName: skill};
-				});
 				RpsService.handShown($scope.rpsDto).then(function() {
 					console.log("entered rpcService.handShown()");
 					RpsService.getAllUsers().then(function(value) {
@@ -25,11 +20,9 @@ module.controller("RpsController", [ "$scope", "RpsService",
 						console.log("no callback");
 					});
 
-					$scope.skills = [];
 					$scope.rpsDto = {
 						userId : null,
 						userName : null,
-						skillDtos : []
 					};
 				}, function(reason) {
 					console.log("error occured");
