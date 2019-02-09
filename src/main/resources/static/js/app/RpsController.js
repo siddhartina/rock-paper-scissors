@@ -1,7 +1,7 @@
 'use strict'
 
 var module = angular.module('demo.controllers', []);
-module.controller("UserController", [ "$scope", "UserService",
+module.controller("RpsController", [ "$scope", "UserService",
 		function($scope, UserService) {
 
 			$scope.userDto = {

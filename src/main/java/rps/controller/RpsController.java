@@ -17,7 +17,7 @@ import rps.utils.Constants;
  */
 @RequestMapping("/user")
 @RestController
-public class UserController {
+public class RpsController {
 	@Autowired
 	private UserService userService;
 
