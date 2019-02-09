@@ -11,12 +11,12 @@ module.controller("RpsController", [ "$scope", "RpsService",
 			};
 			$scope.skills = [];
 			
-			$scope.saveUser = function() {
+			$scope.handShown = function() {
 				$scope.rpsDto.skillDtos = $scope.skills.map(skill => {
 					return {skillId: null, skillName: skill};
 				});
-				RpsService.saveUser($scope.rpsDto).then(function() {
-					console.log("works");
+				RpsService.handShown($scope.rpsDto).then(function() {
+					console.log("entered rpcService.handShown()");
 					RpsService.getAllUsers().then(function(value) {
 						$scope.allUsers= value.data;
 					}, function(reason) {

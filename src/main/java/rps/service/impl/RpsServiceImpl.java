@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class RpsServiceImpl implements RpsService {
 	@Override
-	public void saveUser(RpsDto rpsDto) {
+	public void handShown(RpsDto rpsDto) {
 
 	}
 

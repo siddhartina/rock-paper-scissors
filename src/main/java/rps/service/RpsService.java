@@ -8,6 +8,6 @@ import rps.dto.RpsDto;
  * Created by ashish on 13/5/17.
  */
 public interface RpsService {
-    void saveUser(RpsDto rpsDto);
+    void handShown(RpsDto rpsDto);
     List<RpsDto> getAllUsers();
 }

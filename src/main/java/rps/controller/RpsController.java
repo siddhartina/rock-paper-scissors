@@ -27,7 +27,7 @@ public class RpsController {
 	}
 	
 	@RequestMapping(value= Constants.SAVE_USER, method= RequestMethod.POST)
-	public void saveUser(@RequestBody RpsDto rpsDto) {
-		rpsService.saveUser(rpsDto);
+	public void handShown(@RequestBody RpsDto rpsDto) {
+		rpsService.handShown(rpsDto);
 	}
 }
