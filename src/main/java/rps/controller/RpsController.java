@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import rps.dto.UserDto;
-import rps.service.UserService;
+import rps.service.RpsService;
 import rps.utils.Constants;
 
 /**
@@ -19,15 +19,15 @@ import rps.utils.Constants;
 @RestController
 public class RpsController {
 	@Autowired
-	private UserService userService;
+	private RpsService rpsService;
 
 	@RequestMapping(Constants.GET_ALL_USERS)
 	public List<UserDto> getAllUsers() {
-		return userService.getAllUsers();
+		return rpsService.getAllUsers();
 	}
 	
 	@RequestMapping(value= Constants.SAVE_USER, method= RequestMethod.POST)
 	public void saveUser(@RequestBody UserDto userDto) {
-		userService.saveUser(userDto);
+		rpsService.saveUser(userDto);
 	}
 }

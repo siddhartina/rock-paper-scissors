@@ -1,8 +1,8 @@
 'use strict'
 
 var module = angular.module('demo.controllers', []);
-module.controller("RpsController", [ "$scope", "UserService",
-		function($scope, UserService) {
+module.controller("RpsController", [ "$scope", "RpsService",
+		function($scope, RpsService) {
 
 			$scope.userDto = {
 				userId : null,
@@ -15,9 +15,9 @@ module.controller("RpsController", [ "$scope", "UserService",
 				$scope.userDto.skillDtos = $scope.skills.map(skill => {
 					return {skillId: null, skillName: skill};
 				});
-				UserService.saveUser($scope.userDto).then(function() {
+				RpsService.saveUser($scope.userDto).then(function() {
 					console.log("works");
-					UserService.getAllUsers().then(function(value) {
+					RpsService.getAllUsers().then(function(value) {
 						$scope.allUsers= value.data;
 					}, function(reason) {
 						console.log("error occured");
