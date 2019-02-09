@@ -7,14 +7,12 @@ import java.util.List;
  * Created by ashish on 13/5/17.
  */
 public class UserDto {
-    Integer userId;
-    String userName;
-    List<SkillDto> skillDtos= new ArrayList<>();
+    private Integer userId;
+    private String userName;
 
-    public UserDto(Integer userId, String userName, List<SkillDto> skillDtos) {
+    public UserDto(Integer userId, String userName) {
         this.userId = userId;
         this.userName = userName;
-        this.skillDtos = skillDtos;
     }
 
     public UserDto() {
@@ -34,13 +32,5 @@ public class UserDto {
 
     public void setUserName(String userName) {
         this.userName = userName;
-    }
-
-    public List<SkillDto> getSkillDtos() {
-        return skillDtos;
-    }
-
-    public void setSkillDtos(List<SkillDto> skillDtos) {
-        this.skillDtos = skillDtos;
     }
 }
