@@ -20,13 +20,8 @@ import com.example.demo.utils.Constants;
 @RestController
 public class UserController {
 	@Autowired
-	UserService userService;
+	private UserService userService;
 
-	@RequestMapping(Constants.GET_USER_BY_ID)
-	public UserDto getUserById(@PathVariable Integer userId) {
-		return userService.getUserById(userId);
-	}
-	
 	@RequestMapping(Constants.GET_ALL_USERS)
 	public List<UserDto> getAllUsers() {
 		return userService.getAllUsers();

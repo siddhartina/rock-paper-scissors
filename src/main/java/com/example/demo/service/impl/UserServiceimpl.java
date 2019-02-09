@@ -14,11 +14,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceimpl implements UserService {
 	@Override
-	public UserDto getUserById(Integer userId) {
-		return null;
-	}
-
-	@Override
 	public void saveUser(UserDto userDto) {
 
 	}

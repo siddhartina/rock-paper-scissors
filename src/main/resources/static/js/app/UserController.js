@@ -11,14 +11,6 @@ module.controller("UserController", [ "$scope", "UserService",
 			};
 			$scope.skills = [];
 			
-			UserService.getUserById(1).then(function(value) {
-				console.log(value.data);
-			}, function(reason) {
-				console.log("error occured");
-			}, function(value) {
-				console.log("no callback");
-			});
-
 			$scope.saveUser = function() {
 				$scope.userDto.skillDtos = $scope.skills.map(skill => {
 					return {skillId: null, skillName: skill};
