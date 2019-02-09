@@ -6,8 +6,8 @@ angular.module('demo.services', []).factory('RpsService',
 			service.getAllUsers = function() {
 				return $http.get(CONSTANTS.getAllUsers);
 			}
-			service.saveUser = function(userDto) {
-				return $http.post(CONSTANTS.saveUser, userDto);
+			service.saveUser = function(rpsDto) {
+				return $http.post(CONSTANTS.saveUser, rpsDto);
 			}
 			return service;
 		} ]);

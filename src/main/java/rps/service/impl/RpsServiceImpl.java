@@ -1,6 +1,6 @@
 package rps.service.impl;
 
-import rps.dto.UserDto;
+import rps.dto.RpsDto;
 import rps.service.RpsService;
 
 import java.util.Collections;
@@ -14,12 +14,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class RpsServiceImpl implements RpsService {
 	@Override
-	public void saveUser(UserDto userDto) {
+	public void saveUser(RpsDto rpsDto) {
 
 	}
 
 	@Override
-	public List<UserDto> getAllUsers() {
+	public List<RpsDto> getAllUsers() {
 		return Collections.emptyList();
 	}
 }

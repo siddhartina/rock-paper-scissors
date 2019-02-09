@@ -4,7 +4,7 @@ var module = angular.module('demo.controllers', []);
 module.controller("RpsController", [ "$scope", "RpsService",
 		function($scope, RpsService) {
 
-			$scope.userDto = {
+			$scope.rpsDto = {
 				userId : null,
 				userName : null,
 				skillDtos : []
@@ -12,10 +12,10 @@ module.controller("RpsController", [ "$scope", "RpsService",
 			$scope.skills = [];
 			
 			$scope.saveUser = function() {
-				$scope.userDto.skillDtos = $scope.skills.map(skill => {
+				$scope.rpsDto.skillDtos = $scope.skills.map(skill => {
 					return {skillId: null, skillName: skill};
 				});
-				RpsService.saveUser($scope.userDto).then(function() {
+				RpsService.saveUser($scope.rpsDto).then(function() {
 					console.log("works");
 					RpsService.getAllUsers().then(function(value) {
 						$scope.allUsers= value.data;
@@ -26,7 +26,7 @@ module.controller("RpsController", [ "$scope", "RpsService",
 					});
 
 					$scope.skills = [];
-					$scope.userDto = {
+					$scope.rpsDto = {
 						userId : null,
 						userName : null,
 						skillDtos : []

@@ -6,16 +6,16 @@ import java.util.List;
 /**
  * Created by ashish on 13/5/17.
  */
-public class UserDto {
+public class RpsDto {
     private Integer userId;
     private String userName;
 
-    public UserDto(Integer userId, String userName) {
+    public RpsDto(Integer userId, String userName) {
         this.userId = userId;
         this.userName = userName;
     }
 
-    public UserDto() {
+    public RpsDto() {
     }
 
     public Integer getUserId() {
