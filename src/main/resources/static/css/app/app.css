@@ -3,7 +3,7 @@ span.spacing{ margin-right: 10px; }
 input.custom-width{ width: 200px; }
 input.spacing{ margin-right: 5px; }
 
-spam.hand,
+span.hand,
 span.rock-human,
 span.paper-human,
 span.scissors-human,
@@ -15,6 +15,17 @@ span.scissors-computer
     width: 146px;
     height: 146px;
 }
+span.computer_wins-computer,
+span.human_wins-computer,
+span.tie-computer,
+span.computer_wins-human,
+span.human_wins-human,
+span.tie-human
+{
+    float: left;
+    width: 155px;
+    height: 146px;
+}
 
 span.rock-human {background: url(../../icons/rock-human.png) no-repeat;}
 span.paper-human {background: url(../../icons/paper-human.png) no-repeat;}
@@ -22,3 +33,9 @@ span.scissors-human {background: url(../../icons/scissors-human.png) no-repeat;}
 span.rock-computer {background: url(../../icons/rock-computer.png) no-repeat;}
 span.paper-computer {background: url(../../icons/paper-computer.png) no-repeat;}
 span.scissors-computer {background: url(../../icons/scissors-computer.png) no-repeat;}
+span.computer_wins-computer {background: url(../../icons/mood-computer_wins-computer.png) no-repeat;}
+span.human_wins-computer {background: url(../../icons/mood-human_wins-computer.png) no-repeat;}
+span.tie-computer {background: url(../../icons/mood-tie-computer.png) no-repeat;}
+span.computer_wins-human {background: url(../../icons/mood-computer_wins-human.png) no-repeat;}
+span.human_wins-human {background: url(../../icons/mood-human_wins-human.png) no-repeat;}
+span.tie-human {background: url(../../icons/mood-tie-human.png) no-repeat;}

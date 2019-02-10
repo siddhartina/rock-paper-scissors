@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 import rps.dto.Choice;
 import rps.dto.Move;
+import rps.dto.Result;
 import rps.service.RpsService;
 
 @RequestMapping("/rps")
@@ -16,6 +17,7 @@ public class RpsController {
 	@RequestMapping(value="/humanChoice", method= RequestMethod.POST)
 	public Move humanChoice(@RequestParam(name="choice") Choice humanChoice) {
 		Choice computersChoice = rpsService.computersChoice();
-		return new Move(computersChoice);
+		Result result = rpsService.computeResult(humanChoice, computersChoice);
+		return new Move(computersChoice, result);
 	}
 }

@@ -1,13 +1,19 @@
 package rps.dto;
 
 public class Move {
-    private Choice choice;
+    private Choice computersChoice;
+    private Result result;
 
-    public Move(Choice choice) {
-        this.choice = choice;
+    public Move(Choice choice, Result result) {
+        this.computersChoice = choice;
+        this.result = result;
     }
 
-    public Choice getChoice() {
-        return choice;
+    public Result getResult() {
+        return result;
+    }
+
+    public Choice getComputersChoice() {
+        return computersChoice;
     }
 }

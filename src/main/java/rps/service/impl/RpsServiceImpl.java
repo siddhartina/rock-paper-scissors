@@ -9,10 +9,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class RpsServiceImpl implements RpsService {
-	@Override
-	public Move humanMove(Choice choice) {
-		return new Move(Choice.randomChoice());
-	}
 
 	@Override
 	public Choice computersChoice() {

@@ -5,7 +5,6 @@ import rps.dto.Move;
 import rps.dto.Result;
 
 public interface RpsService {
-    Move humanMove(Choice choice);
 
     Choice computersChoice();
 
