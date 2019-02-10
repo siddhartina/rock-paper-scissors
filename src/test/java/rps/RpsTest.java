@@ -7,10 +7,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class BootDemoApplicationTests {
-
+public class RpsTest {
 	@Test
 	public void contextLoads() {
 	}
-
 }
