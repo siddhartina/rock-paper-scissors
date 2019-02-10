@@ -3,5 +3,5 @@
 var demoApp = angular.module('demo', [ 'ui.bootstrap', 'demo.controllers',
 		'demo.services' ]);
 demoApp.constant("CONSTANTS", {
-	handShown : "/rps/handShown?choice="
+	humanMove : "/rps/humanChoice?choice="
 });

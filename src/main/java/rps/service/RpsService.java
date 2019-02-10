@@ -1,8 +1,10 @@
 package rps.service;
 
 import rps.dto.Choice;
-import rps.dto.ComputersChoiceDto;
+import rps.dto.Move;
 
 public interface RpsService {
-    ComputersChoiceDto handShown(Choice choice);
+    Move humanMove(Choice choice);
+
+    Choice computersChoice();
 }

@@ -3,10 +3,9 @@
 var module = angular.module('demo.controllers', []);
 module.controller("RpsController", [ "$scope", "RpsService",
 		function($scope, RpsService) {
-			$scope.handShown = function(choice) {
+			$scope.humanMove = function(choice) {
 			    $scope.humanChoice={className:choice.toLowerCase()+'-human'};
-				RpsService.handShown(choice).then(function(response) {
-					console.log("Entered rpcService.handShown("+choice+") -> " + response.data.choice);
+				RpsService.humanMove(choice).then(function(response) {
 					$scope.computersChoice=response.data;
 					$scope.computersChoice.className=response.data.choice.toLowerCase() + '-computer';
 				}, function(reason) {
