@@ -1,7 +1,11 @@
 'use strict'
 
-var demoApp = angular.module('demo', [ 'ui.bootstrap', 'demo.controllers',
-		'demo.services' ]);
-demoApp.constant("CONSTANTS", {
+var rpsApp = angular.module('rps', [
+    'ui.bootstrap',
+    'rps.controllers',
+    'rps.services'
+]);
+
+rpsApp.constant("CONSTANTS", {
 	humanMove : "/rps/humanChoice?choice="
 });

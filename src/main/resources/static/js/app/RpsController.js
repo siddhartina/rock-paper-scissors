@@ -1,6 +1,6 @@
 'use strict'
 
-var module = angular.module('demo.controllers', []);
+var module = angular.module('rps.controllers', []);
 module.controller("RpsController", [ "$scope", "RpsService",
 		function($scope, RpsService) {
 		    var move = {};

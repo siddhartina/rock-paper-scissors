@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('demo.services', []).factory('RpsService',
+angular.module('rps.services', []).factory('RpsService',
 		[ "$http", "CONSTANTS", function($http, CONSTANTS) {
 			var service = {};
 			service.humanMove = function(choice) {
