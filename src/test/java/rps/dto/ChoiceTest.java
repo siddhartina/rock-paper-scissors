@@ -6,7 +6,7 @@ import static org.hamcrest.Matchers.*;
 
 public class ChoiceTest {
     @Test
-    public void shouldBeat() {
+    public void testBeat() {
        assertThat(Choice.ROCK.beats(Choice.ROCK), is(false));
        assertThat(Choice.ROCK.beats(Choice.PAPER), is(false));
        assertThat(Choice.ROCK.beats(Choice.SCISSORS), is(true));
