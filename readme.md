@@ -15,13 +15,13 @@ Open a Browser and open localhost:8080
 
 ## Run as Docker image
 
-# Clone and build docker image
+### Clone and build docker image
 ```
 git clone https://github.com/siddhartina/rock-paper-scissors.git
 cd rock-paper-scissors
 mvn compile jib:build
 ```
-# Run docker container
+### Run docker container
 ```
 docker run -d -p8080:8080 siddhartino/sandbox:rock-paper-scissors-20190303
 ```
