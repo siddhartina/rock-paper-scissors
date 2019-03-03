@@ -23,7 +23,7 @@ mvn compile jib:build
 ```
 ### Run docker container
 ```
-docker run -d -p8080:8080 siddhartino/sandbox:rock-paper-scissors-20190303
+docker run -d -p8080:8080 registry.hub.docker.com/siddhartino/sandbox:rock-paper-scissors-20190303
 ```
 
 Open a Browser and open localhost:8080
