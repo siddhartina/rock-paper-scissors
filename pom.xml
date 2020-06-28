@@ -64,7 +64,7 @@
                 <to> <!-- Name des zu erzeugenden Images -->
                   <image>registry.hub.docker.com/siddhartino/sandbox</image>
                   <tags>
-                    <tag>rock-paper-scissors-20190303</tag>
+                      <tag>rock-paper-scissors-20190303</tag>
                   </tags>
 				</to>
 			  </configuration>
